@@ -215,16 +215,16 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("Target: {}".format(target_info.fingerprint))
 
   # Build info
-  script.Print("                                                                              ");
-  script.Print("  ██╗     ██╗   ██╗███╗   ██╗ █████╗ ██████╗ ██╗███████╗     ██████╗ ███████╗ ");
-  script.Print("  ██║     ██║   ██║████╗  ██║██╔══██╗██╔══██╗██║██╔════╝    ██╔═══██╗██╔════╝ ");
-  script.Print("  ██║     ██║   ██║██╔██╗ ██║███████║██████╔╝██║███████╗    ██║   ██║███████╗ ");
-  script.Print("  ██║     ██║   ██║██║╚██╗██║██╔══██║██╔══██╗██║╚════██║    ██║   ██║╚════██║ ");
-  script.Print("  ███████╗╚██████╔╝██║ ╚████║██║  ██║██║  ██║██║███████║    ╚██████╔╝███████║ ");
-  script.Print("  ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝     ╚═════╝ ╚══════  ");
-  script.Print("                                                                              ");
+  script.Print("                                                                                          ");
+  script.Print("   █████╗  ██╗        ██████╗  ██╗  ██╗ ██████╗  ███╗   ███╗ ██╗   ██╗  ██████╗   ██████╗ ");
+  script.Print("  ██╔══██╗ ██║       ██╔════╝  ██║  ██║ ╚════██╗ ████╗ ████║ ╚██╗ ██╔╝ ██╔═══██╗ ██╔════╝ ");
+  script.Print("  ███████║ ██║       ██║       ███████║  █████╔╝ ██╔████╔██║  ╚████╔╝  ██║   ██║ ╚█████╗  ");
+  script.Print("  ██╔══██║ ██║       ██║       ██╔══██║  ╚═══██╗ ██║╚██╔╝██║   ╚██╔╝   ██║   ██║  ╚═══██╗ ");
+  script.Print("  ██║  ██║ ███████╗  ╚██████╗  ██║  ██║ ██████╔╝ ██║ ╚═╝ ██║    ██║    ╚██████╔╝ ██████╔╝ ");
+  script.Print("  ╚═╝  ╚═╝ ╚══════╝   ╚═════╝  ╚═╝  ╚═╝ ╚═════╝  ╚═╝     ╚═╝    ╚═╝     ╚═════╝  ╚═════╝  ");
+  script.Print("                                                                                          ");
 
-  buildid = target_info.GetBuildProp("ro.lunaris.build.version")
+  buildid = target_info.GetBuildProp("ro.alch3my.build.version")
   androidver = target_info.GetBuildProp("ro.build.version.release")
   buildidn = target_info.GetBuildProp("ro.build.id")
   buildday = target_info.GetBuildProp("ro.build.date")
